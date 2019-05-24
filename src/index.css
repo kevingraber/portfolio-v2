@@ -50,6 +50,12 @@ code {
     background-size: cover;
 }
 
+#box2 {
+    background-image: url("wol.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 .tag {
     /* background: lightblue; */
     /* height: 20px; */
@@ -65,5 +71,11 @@ code {
 }
 
 hr {
-    width: 80%;
+    width: 60%;
+}
+
+#footer {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
 }

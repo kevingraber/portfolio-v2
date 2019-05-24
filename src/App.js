@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HelloMessage from './components/project';
+// import Tag from './components/tag';
+import TagArea from './components/tag-area';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           Learn React!!
         </a>
       </header>
-      <p>Some things I've worked on!</p>
+      <p>Some things I've worked on.. This is my resume.  here is my github. this is my email.</p>
+
       <hr />
       <div id="box-container">
           <div class="box" id="box1">
@@ -30,11 +32,8 @@ function App() {
                 <div class="tag"><i class="fas fa-cubes"></i></div>
             </div>
           </div>
-          <div class="box">
-              <div class="tag-area">
-                  <div class="tag"><i class="fab fa-node-js"></i></div>
-                  <div class="tag"><i class="fas fa-database"></i></div>
-              </div>
+          <div class="box" id="box2">
+            <TagArea tags={['node', 'database', 'npm']} />
           </div>
           <div class="box">
           <div class="tag-area">
@@ -49,15 +48,20 @@ function App() {
           </div>
           </div>
           <div class="box">
-          <div class="tag-area">
-              <div class="tag"><i class="far fa-hdd"></i></div>
-              <div class="tag"><i class="fas fa-server"></i></div>
-              <div class="tag"><i class="fab fa-raspberry-pi"></i></div>
-              <div class="tag"><i class="fab fa-ubuntu"></i></div>
-          </div>
+              <div class="tag-area">
+                  <div class="tag"><i class="far fa-hdd"></i></div>
+                  <div class="tag"><i class="fas fa-server"></i></div>
+                  <div class="tag"><i class="fab fa-raspberry-pi"></i></div>
+                  <div class="tag"><i class="fab fa-ubuntu"></i></div>
+              </div>
           </div>
           <div class="box"></div>
-       </div>
+      </div>
+      <hr />
+      <div id="footer">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github-square"></i>
+      </div>
     </div>
   );
 }
